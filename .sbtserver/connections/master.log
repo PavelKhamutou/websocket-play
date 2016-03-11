@@ -1,0 +1,25 @@
+New log file opened at Thu Mar 10 18:48:25 CET 2016 by 14192@pkpc
+Taking next connection to: 38684
+New client attempting to connect on port: 58574-38684
+  Address = /127.0.1.1:38684
+This client on port 58574 has uuid c0118087-833d-45be-ac30-c0d16b920eb2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-c0118087-833d-45be-ac30-c0d16b920eb2
+Taking next connection to: 38684
+New client attempting to connect on port: 58576-38684
+  Address = /127.0.1.1:38684
+Handshake exception on socket: 58576
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 38684
+New client attempting to connect on port: 58578-38684
+  Address = /127.0.1.1:38684
+This client on port 58578 has uuid 27e10b03-be1f-4ff8-94f5-c0cb485d3b93 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-c0118087-833d-45be-ac30-c0d16b920eb2, activator-27e10b03-be1f-4ff8-94f5-c0cb485d3b93
+Taking next connection to: 38684
