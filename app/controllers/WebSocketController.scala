@@ -1,16 +1,12 @@
 package controllers
 
 import javax.inject._
-import actors.{Message, ChatRoom, UserActor, TestActor}
+import actors.{ChatRoom, UserActor}
 import akka.actor._
-import akka.stream.{Materializer, ClosedShape, FlowShape}
+import akka.stream.{Materializer, FlowShape}
 import akka.stream.scaladsl.{Merge, Broadcast, GraphDSL, Flow}
-import play.api._
 import play.api.libs.streams.ActorFlow
 import play.api.mvc._
-//import play.api.Play.current
-import play.api.Play.materializer
-import scala.concurrent.duration._
 
 
 class WebSocketController @Inject()(system: ActorSystem, mat: Materializer) extends Controller {
