@@ -8,6 +8,10 @@ There are several demonstration files available in this template.
 Controllers
 ===========
 
+- WebSocketController.scala:
+
+  Create websocket chanel
+
 - HomeController.scala:
 
   Shows how to handle simple HTTP requests.
@@ -52,5 +56,6 @@ Filters
 Run web sockets
 =====
 `activator "run -Dhttp.port=9001 -Dakka.remote.netty.tcp.port=2551"`
+
 `activator "run -Dhttp.port=9002 -Dakka.remote.netty.tcp.port=2552"`
 
